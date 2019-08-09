@@ -16,8 +16,8 @@ function App({ match }) {
           {
               getCurrentLocation() !== '/' ? <Header /> : null
           }
-          <Route exact path='/questions' component={Questions}/>
-          <Route exact path='/question/:questionId' component={Question}/>
+          <Route exact path='/questions' component={Questions} />
+          <Route exact path='/question/:questionId' component={Question} />
       </div>
   );
 }

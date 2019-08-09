@@ -11,15 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   monospace;
 }
-
-.btn-option {
-  width: 200px;
-  border-top: 20px solid red;
-  border-bottom: 20px solid #fc0;
-  border-right: 40px solid green;
-  background: black;
-  text-align: left;
-  border-radius: 0;
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}

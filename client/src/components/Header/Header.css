@@ -1,1 +1,20 @@
+.app-logo {
+    min-height: 10vmin;
+    height: 10vmin;
+    pointer-events: none;
+    -webkit-box-shadow: 0px 0px 300px 94px rgba(73,155,234,1);
+    -moz-box-shadow: 0px 0px 300px 94px rgba(73,155,234,1);
+    box-shadow: 0px 0px 300px 94px rgba(73,155,234,1);
+    border-radius: 200px 200px 200px 200px;
+}
+
+.ray_box {
+    -webkit-animation: ray_anim 120s linear infinite;
+    animation: ray_anim 120s linear infinite;
+}
+
+@-webkit-keyframes ray_anim {
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
 
