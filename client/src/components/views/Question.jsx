@@ -32,7 +32,9 @@ class Question extends Component {
                         {
                             Object.keys(question.options).map((letter ,idx) => {
                                 console.log(letter);
-                            return (<p className = "lead" key = {letter} > {question.options[letter]} < /p>)
+                                return (
+                                    <p className="lead" key={letter}>{question.options[letter]}</p>
+                                )
                             })
                         }
                     </div>
