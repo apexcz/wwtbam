@@ -1,8 +1,9 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 
 import logo from "../../who-wants-to-be-a-millionaire.svg";
 
 import "./BannerIntro.css";
+import Link from "../Link/LinkButton";
 
 const BannerIntro = () => (
     <div className="banner-intro">
@@ -20,13 +21,13 @@ const BannerIntro = () => (
                 </div>
             </form>
         </div>
-        <div className="banner-image">
+        <div className="banner-image sun">
             <div className="ray ray1 ray2 ray3 ray4 ray5 ray6 ray7 ray8 ray9">
                 <img src={logo} className="ray_box App-logo" alt="logo" />
             </div>
         </div>
         <div className="banner-button">
-            <button type="button" className="btn btn-light btn-lg btn-block">Start</button>
+            <Link text="Start"/>
         </div>
     </div>
 );
