@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import logo from "../../who-wants-to-be-a-millionaire.svg";
 
+import { getQuestion } from "../../Logic";
 import "./BannerIntro.css";
-import Link from "../Link/LinkButton";
 
 const BannerIntro = () => (
     <div className="banner-intro">
@@ -27,7 +28,9 @@ const BannerIntro = () => (
             </div>
         </div>
         <div className="banner-button">
-            <Link text="Start"/>
+            <button type="button" className="btn btn-success btn-lg">
+                <Link to={getQuestion(1)}>Start</Link>
+            </button>
         </div>
     </div>
 );
