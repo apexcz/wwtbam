@@ -4,19 +4,38 @@
     min-height: 100vh
 }
 
-.banner-input {
-    text-align: center;
-    padding: 10px;
-    height: 5vh;
-}
-
 .banner-image {
     height: 85vh;
 }
 
-.banner-button {
-    margin: 10px;
+.banner-input {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 200px;
+    text-align: center;
     height: 5vh;
+}
+
+.banner-button {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin-top: 100px;
+    text-align: center;
+    height: 5vh;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: black;
+    text-decoration-line: none;
 }
 
 .sun {
@@ -26,7 +45,7 @@
     right:0;
     bottom:0;
     margin: auto;
-    border-radius:50%;
+    border-radius:100%;
     box-shadow: 0px 0px 0px 0px white;
 }
 
@@ -44,7 +63,7 @@
     -webkit-box-shadow: 0px 0px 300px 94px rgba(73,155,234,1);
     -moz-box-shadow: 0px 0px 300px 94px rgba(73,155,234,1);
     box-shadow: 0px 0px 300px 94px rgba(73,155,234,1);
-    border-radius: 200px 200px 200px 200px;
+    border-radius: 100%;
 }
 
 .ray_box {
@@ -55,13 +74,4 @@
 @-webkit-keyframes ray_anim {
     0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}
     100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
-}
-
-.font-awesome-home {
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 48px;
-    color: white;
 }

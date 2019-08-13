@@ -1,6 +1,6 @@
 .app-logo {
-    min-height: 10vmin;
-    height: 10vmin;
+    min-height: 5vmin;
+    height: 5vmin;
     pointer-events: none;
     -webkit-box-shadow: 0px 0px 300px 94px rgba(73,155,234,1);
     -moz-box-shadow: 0px 0px 300px 94px rgba(73,155,234,1);
