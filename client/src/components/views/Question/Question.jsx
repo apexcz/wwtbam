@@ -1,8 +1,10 @@
 import React, {Component, Fragment} from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import axios from 'axios';
-import Header from "../../Header/Header";
 import './Question.css';
+import Header from "../../Header/Header";
+import { getHomePath } from "../../../Logic";
+import Loader from "../../Loader/Loader";
 
 class Question extends Component {
     constructor(props) {
@@ -22,12 +24,12 @@ class Question extends Component {
     }
 
     render() {
-        const {question} = this.state;
-        if (question === null) return <p>Loading...</p>
+        const { question } = this.state;
 
         return (
+            question === null ? <Loader /> :
             <Fragment>
-                <Header />
+                <Header/>
                 <div className="row">
                     <div className="jumbotron col-12">
                         <h1 className="display-3">{question.description}</h1>
@@ -37,21 +39,22 @@ class Question extends Component {
                             {
                                 Object.keys(question.options).map((letter ,idx) => {
                                     return (
-                                        <Fragment>
-                                            <div>
-                                                <div className="diamond-left"/>
-                                                <div className="square">
-                                                    <p className="content p-3" key={letter}>{letter} - {question.options[letter]}</p>
-                                                </div>
-                                                <div className="diamond-right"/>
+                                        <div key={letter}>
+                                            <div className="diamond-left"/>
+                                            <div className="square">
+                                                <p className="content p-3">{letter} - {question.options[letter]}</p>
                                             </div>
-                                        </Fragment>
+                                            <div className="diamond-right"/>
+                                        </div>
                                     )
                                 })
                             }
                         </div>
                     </div>
                 </div>
+                <Link to={getHomePath()}>
+                    <i className="font-awesome-home fa fa-home"/>
+                </Link>
             </Fragment>
         )
     }

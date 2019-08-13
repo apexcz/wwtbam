@@ -4,21 +4,11 @@
     min-height: 100vh
 }
 
-.banner-input {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    margin: 200px;
-    text-align: center;
-    height: 5vh;
-}
-
 .banner-image {
     height: 85vh;
 }
 
-.banner-button {
+.banner-input {
     position: absolute;
     right: 0;
     left: 0;
@@ -26,6 +16,26 @@
     margin: 200px;
     text-align: center;
     height: 5vh;
+}
+
+.banner-button {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin-top: 100px;
+    text-align: center;
+    height: 5vh;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: black;
+    text-decoration-line: none;
 }
 
 .sun {
@@ -64,13 +74,4 @@
 @-webkit-keyframes ray_anim {
     0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}
     100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
-}
-
-.font-awesome-home {
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 48px;
-    color: white;
 }

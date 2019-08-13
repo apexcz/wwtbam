@@ -34,4 +34,14 @@ p {
     display:inline-table;
 }
 
+.font-awesome-home {
+    padding: 10px;
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    right: 0;
+    font-size: 48px;
+    color: black;
+}
+
 
