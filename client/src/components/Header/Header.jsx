@@ -6,12 +6,14 @@ import './Header.css';
 
 function Header() {
     return (
+        <div>
         <nav className="navbar navbar-light bg-dark fixed-top">
             <a className="navbar-brand" href="/">
                 <img src={logo} className="ray_box app-logo" alt="logo" />
                 Who Wants To Be A Millionaire
             </a>
         </nav>
+        </div>
     )
 }
 

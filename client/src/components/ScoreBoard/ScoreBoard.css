@@ -1,0 +1,65 @@
+.board-panel {
+    width: 300px;
+    height: 500px;
+    margin: 120px auto;
+    border: 3px solid blue;
+    background: black;
+}
+
+.life-lines {
+    display: flex;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.life-line {
+    height: 50px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid blue;
+    flex: 1;
+    margin-left:10px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    overflow: auto; 
+    font-weight: 700;
+    padding-top: 9px;
+}
+
+.life-lines:first-child{
+    margin-left: 0px; 
+}
+
+.life-lines:last-child{
+    margin-right: 0px; 
+}
+
+.fifty-fifty {
+    font-size: 20px;
+}
+
+.phone-friend {
+    font-size: 35px;
+}
+
+.ask-audience {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    color: white;
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+
+ul li::before {
+    width:20px;
+    height: 20px;
+    background: white;
+    transform: rotate(45deg);
+    margin-right: 10px;
+}

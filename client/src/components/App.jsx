@@ -8,6 +8,7 @@ import BannerIntro from "./BannerIntro/BannerIntro";
 import Question from "./views/Question";
 import Questions from "./views/Questions";
 import './App.css';
+import ScoreBoard from './ScoreBoard/ScoreBoard';
 
 function App({ match }) {
   return (
@@ -18,6 +19,7 @@ function App({ match }) {
           }
           <Route exact path='/questions' component={Questions} />
           <Route exact path='/question/:questionId' component={Question} />
+          <Route exact path='/scoreboard' component={ScoreBoard} />
       </div>
   );
 }
